@@ -6,7 +6,7 @@ const port = 3000;
 
 // Middleware
 app.use(cors());
-app.use(express.json());
+app.use(express.json({ type: "*/*" }));
 
 // Fake-Speicher im RAM (nur für Test!)
 const settingsStore = new Map(); // key: portalId, value: { sensorUrl }
@@ -25,7 +25,9 @@ app.get("/hubspot/settings", (req, res) => {
 
 // POST /hubspot/settings  { portalId, sensorUrl }
 app.post("/hubspot/settings", (req, res) => {
-  const { portalId, sensorUrl } = req.body;
+  console.log("Incoming /hubspot/settings body:", req.body);
+
+  const { portalId, sensorUrl } = req.body || {};
 
   if (!portalId || !sensorUrl) {
     return res
