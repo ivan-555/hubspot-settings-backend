@@ -1,0 +1,581 @@
+{
+    "results": [
+        {
+            "objectId": 1,
+            "title": "",
+            "description": "Re:Guest Portal Information",
+            "actions": [],
+            "properties": [
+                {
+                    "label": "Portal Id",
+                    "dataType": "LINK",
+                    "value": "http://localhost:5200//reguest-portal/customers/43",
+                    "linkLabel": "43"
+                }
+            ]
+        },
+        {
+            "objectId": 1,
+            "title": "",
+            "description": "ChargeBee Information",
+            "actions": [
+                {
+                    "confirmationMessage": "Are you sure you want to update the customer in ChargeBee",
+                    "confirmButtonText": "Yes",
+                    "cancelButtonText": "No",
+                    "type": "CONFIRMATION_ACTION_HOOK",
+                    "uri": "https://hubspot-thomas.test.reguest.io/Api/IntegrationApi/HubSpot/UpdateChargeBeeCustomer?objectId=8008615922",
+                    "label": "Update ChargeBee customer",
+                    "associatedObjectProperties": [
+                        "reguest_customer_id",
+                        "name"
+                    ],
+                    "httpMethod": "GET"
+                }
+            ],
+            "properties": [
+                {
+                    "label": "ChargeBee Id",
+                    "dataType": "LINK",
+                    "value": "https://reguest-test.chargebee.com/d/customers/DEV-TOM-43",
+                    "linkLabel": "DEV-TOM-43"
+                },
+                {
+                    "label": "Billing Company",
+                    "dataType": "STRING",
+                    "value": "Stellantis Lancia Italia"
+                },
+                {
+                    "label": "VAT",
+                    "dataType": "STRING",
+                    "value": "73353680793"
+                },
+                {
+                    "label": "iPA (IT:CUUO)",
+                    "dataType": "STRING",
+                    "value": "VVVVVVV"
+                },
+                {
+                    "label": "Email",
+                    "dataType": "EMAIL",
+                    "value": "lancia-italia@reguest.example.com"
+                }
+            ]
+        },
+        {
+            "objectId": 3,
+            "title": "",
+            "description": "",
+            "actions": [],
+            "properties": [
+                {
+                    "label": "Information",
+                    "dataType": "STRING",
+                    "value": "Customer has 8 subscriptions"
+                }
+            ]
+        },
+        {
+            "objectId": 3,
+            "title": "",
+            "description": "",
+            "actions": [
+                {
+                    "type": "IFRAME",
+                    "uri": "https://hubspot-thomas.test.reguest.io/Api/IntegrationApi/HubSpot/ChargeBeeSubscriptionDetails?chargeBeeCustomerId=DEV-TOM-43&t=577ffad9-a835-46b2-86d1-a51759dd0811&subscriptionId=BTLzRjUK63EUtj9",
+                    "label": "Show Subscription Details",
+                    "associatedObjectProperties": []
+                }
+            ],
+            "properties": [
+                {
+                    "label": "Subscription Id",
+                    "dataType": "LINK",
+                    "value": "https://reguest-test.chargebee.com/d/subscriptions/BTLzRjUK63EUtj9",
+                    "linkLabel": "BTLzRjUK63EUtj9"
+                },
+                {
+                    "label": "Status",
+                    "dataType": "STATUS",
+                    "value": "Active",
+                    "optionType": "SUCCESS"
+                },
+                {
+                    "label": "Product Family",
+                    "dataType": "STRING",
+                    "value": "Re:Guest"
+                },
+                {
+                    "label": "Plan",
+                    "dataType": "STRING",
+                    "value": "Plan AI Chatbot "
+                },
+                {
+                    "label": "Addon",
+                    "dataType": "STRING",
+                    "value": "Advanced Security Module , \r\nCRIS AI Chatbot Module , \r\nGuest Communication Module "
+                },
+                {
+                    "label": "Plan Quantity",
+                    "dataType": "STRING",
+                    "value": "1"
+                },
+                {
+                    "label": "ARR",
+                    "dataType": "STRING",
+                    "value": "69.00 EUR"
+                },
+                {
+                    "label": "Billing every",
+                    "dataType": "STRING",
+                    "value": "Year"
+                },
+                {
+                    "label": "Next Billing Date",
+                    "dataType": "STRING",
+                    "value": "30.09.2026"
+                }
+            ]
+        },
+        {
+            "objectId": 4,
+            "title": "",
+            "description": "",
+            "actions": [
+                {
+                    "type": "IFRAME",
+                    "uri": "https://hubspot-thomas.test.reguest.io/Api/IntegrationApi/HubSpot/ChargeBeeSubscriptionDetails?chargeBeeCustomerId=DEV-TOM-43&t=577ffad9-a835-46b2-86d1-a51759dd0811&subscriptionId=BTLzRjUK5NboG4H",
+                    "label": "Show Subscription Details",
+                    "associatedObjectProperties": []
+                }
+            ],
+            "properties": [
+                {
+                    "label": "Subscription Id",
+                    "dataType": "LINK",
+                    "value": "https://reguest-test.chargebee.com/d/subscriptions/BTLzRjUK5NboG4H",
+                    "linkLabel": "BTLzRjUK5NboG4H"
+                },
+                {
+                    "label": "Status",
+                    "dataType": "STATUS",
+                    "value": "Active",
+                    "optionType": "SUCCESS"
+                },
+                {
+                    "label": "Product Family",
+                    "dataType": "STRING",
+                    "value": "Re:Guest"
+                },
+                {
+                    "label": "Plan",
+                    "dataType": "STRING",
+                    "value": "Plan Guest Communication "
+                },
+                {
+                    "label": "Addon",
+                    "dataType": "STRING",
+                    "value": "Guest Communication Module , \r\nCRIS AI Chatbot Module , \r\nUpseller Module , \r\nSales Campaigns Module , \r\nAdvanced Security Module , \r\nAuto Offers Module , \r\nOffers Module , \r\nAuto Selection Module , \r\nWhatsApp Channel , \r\nWebsite Messenger Channel "
+                },
+                {
+                    "label": "Plan Quantity",
+                    "dataType": "STRING",
+                    "value": "1"
+                },
+                {
+                    "label": "ARR",
+                    "dataType": "STRING",
+                    "value": "191.00 EUR"
+                },
+                {
+                    "label": "Billing every",
+                    "dataType": "STRING",
+                    "value": "Year"
+                },
+                {
+                    "label": "Next Billing Date",
+                    "dataType": "STRING",
+                    "value": "30.09.2026"
+                }
+            ]
+        },
+        {
+            "objectId": 5,
+            "title": "",
+            "description": "",
+            "actions": [
+                {
+                    "type": "IFRAME",
+                    "uri": "https://hubspot-thomas.test.reguest.io/Api/IntegrationApi/HubSpot/ChargeBeeSubscriptionDetails?chargeBeeCustomerId=DEV-TOM-43&t=577ffad9-a835-46b2-86d1-a51759dd0811&subscriptionId=BTUNjgUJGfyMb16C",
+                    "label": "Show Subscription Details",
+                    "associatedObjectProperties": []
+                }
+            ],
+            "properties": [
+                {
+                    "label": "Subscription Id",
+                    "dataType": "LINK",
+                    "value": "https://reguest-test.chargebee.com/d/subscriptions/BTUNjgUJGfyMb16C",
+                    "linkLabel": "BTUNjgUJGfyMb16C"
+                },
+                {
+                    "label": "Status",
+                    "dataType": "STATUS",
+                    "value": "Active",
+                    "optionType": "SUCCESS"
+                },
+                {
+                    "label": "Product Family",
+                    "dataType": "STRING",
+                    "value": "Multi Property"
+                },
+                {
+                    "label": "Plan",
+                    "dataType": "STRING",
+                    "value": "Enterprise Plan Guest Communication "
+                },
+                {
+                    "label": "Addon",
+                    "dataType": "STRING",
+                    "value": "Enterprise Guest Communication Module , \r\nEnterprise Auto Offer Module , \r\nEnterprise WhatsApp Channel "
+                },
+                {
+                    "label": "Plan Quantity",
+                    "dataType": "STRING",
+                    "value": "8"
+                },
+                {
+                    "label": "ARR",
+                    "dataType": "STRING",
+                    "value": "13,453.00 EUR"
+                },
+                {
+                    "label": "Billing every",
+                    "dataType": "STRING",
+                    "value": "Year"
+                },
+                {
+                    "label": "Next Billing Date",
+                    "dataType": "STRING",
+                    "value": "04.06.2026"
+                }
+            ]
+        },
+        {
+            "objectId": 6,
+            "title": "",
+            "description": "",
+            "actions": [
+                {
+                    "type": "IFRAME",
+                    "uri": "https://hubspot-thomas.test.reguest.io/Api/IntegrationApi/HubSpot/ChargeBeeSubscriptionDetails?chargeBeeCustomerId=DEV-TOM-43&t=577ffad9-a835-46b2-86d1-a51759dd0811&subscriptionId=BTLzF2UGtpxzK1n4",
+                    "label": "Show Subscription Details",
+                    "associatedObjectProperties": []
+                }
+            ],
+            "properties": [
+                {
+                    "label": "Subscription Id",
+                    "dataType": "LINK",
+                    "value": "https://reguest-test.chargebee.com/d/subscriptions/BTLzF2UGtpxzK1n4",
+                    "linkLabel": "BTLzF2UGtpxzK1n4"
+                },
+                {
+                    "label": "Status",
+                    "dataType": "STATUS",
+                    "value": "Active",
+                    "optionType": "SUCCESS"
+                },
+                {
+                    "label": "Product Family",
+                    "dataType": "STRING",
+                    "value": "Re:Guest"
+                },
+                {
+                    "label": "Plan",
+                    "dataType": "STRING",
+                    "value": "Plan Marketing Cycle "
+                },
+                {
+                    "label": "Addon",
+                    "dataType": "STRING",
+                    "value": "Advanced Security Module , \r\nAuto Selection Module , \r\nSales Campaigns Module , \r\nGuest Communication Module "
+                },
+                {
+                    "label": "Plan Quantity",
+                    "dataType": "STRING",
+                    "value": "1"
+                },
+                {
+                    "label": "ARR",
+                    "dataType": "STRING",
+                    "value": "81.00 EUR"
+                },
+                {
+                    "label": "Billing every",
+                    "dataType": "STRING",
+                    "value": "Year"
+                },
+                {
+                    "label": "Next Billing Date",
+                    "dataType": "STRING",
+                    "value": "27.08.2026"
+                }
+            ]
+        },
+        {
+            "objectId": 7,
+            "title": "",
+            "description": "",
+            "actions": [
+                {
+                    "type": "IFRAME",
+                    "uri": "https://hubspot-thomas.test.reguest.io/Api/IntegrationApi/HubSpot/ChargeBeeSubscriptionDetails?chargeBeeCustomerId=DEV-TOM-43&t=577ffad9-a835-46b2-86d1-a51759dd0811&subscriptionId=77EEwUCB8bls1hA",
+                    "label": "Show Subscription Details",
+                    "associatedObjectProperties": []
+                }
+            ],
+            "properties": [
+                {
+                    "label": "Subscription Id",
+                    "dataType": "LINK",
+                    "value": "https://reguest-test.chargebee.com/d/subscriptions/77EEwUCB8bls1hA",
+                    "linkLabel": "77EEwUCB8bls1hA"
+                },
+                {
+                    "label": "Status",
+                    "dataType": "STATUS",
+                    "value": "Active",
+                    "optionType": "SUCCESS"
+                },
+                {
+                    "label": "Product Family",
+                    "dataType": "STRING",
+                    "value": "Multi Property"
+                },
+                {
+                    "label": "Plan",
+                    "dataType": "STRING",
+                    "value": "Enterprise Plan Offers "
+                },
+                {
+                    "label": "Addon",
+                    "dataType": "STRING",
+                    "value": "Enterprise Guest Communication Module , \r\nEnterprise Offers Module "
+                },
+                {
+                    "label": "Plan Quantity",
+                    "dataType": "STRING",
+                    "value": "1"
+                },
+                {
+                    "label": "ARR",
+                    "dataType": "STRING",
+                    "value": "2,131.00 EUR"
+                },
+                {
+                    "label": "Billing every",
+                    "dataType": "STRING",
+                    "value": "3 Months"
+                },
+                {
+                    "label": "Next Billing Date",
+                    "dataType": "STRING",
+                    "value": "08.01.2026"
+                }
+            ]
+        },
+        {
+            "objectId": 8,
+            "title": "",
+            "description": "",
+            "actions": [
+                {
+                    "type": "IFRAME",
+                    "uri": "https://hubspot-thomas.test.reguest.io/Api/IntegrationApi/HubSpot/ChargeBeeSubscriptionDetails?chargeBeeCustomerId=DEV-TOM-43&t=577ffad9-a835-46b2-86d1-a51759dd0811&subscriptionId=BTLzEJUCB8J171fb",
+                    "label": "Show Subscription Details",
+                    "associatedObjectProperties": []
+                }
+            ],
+            "properties": [
+                {
+                    "label": "Subscription Id",
+                    "dataType": "LINK",
+                    "value": "https://reguest-test.chargebee.com/d/subscriptions/BTLzEJUCB8J171fb",
+                    "linkLabel": "BTLzEJUCB8J171fb"
+                },
+                {
+                    "label": "Status",
+                    "dataType": "STATUS",
+                    "value": "Active",
+                    "optionType": "SUCCESS"
+                },
+                {
+                    "label": "Product Family",
+                    "dataType": "STRING",
+                    "value": "Re:Guest"
+                },
+                {
+                    "label": "Plan",
+                    "dataType": "STRING",
+                    "value": "Sales Hub "
+                },
+                {
+                    "label": "Addon",
+                    "dataType": "STRING",
+                    "value": "Guest Communication Module , \r\nOffers Module "
+                },
+                {
+                    "label": "Plan Quantity",
+                    "dataType": "STRING",
+                    "value": "1"
+                },
+                {
+                    "label": "ARR",
+                    "dataType": "STRING",
+                    "value": "1.00 EUR"
+                },
+                {
+                    "label": "Billing every",
+                    "dataType": "STRING",
+                    "value": "6 Months"
+                },
+                {
+                    "label": "Next Billing Date",
+                    "dataType": "STRING",
+                    "value": "08.01.2026"
+                }
+            ]
+        },
+        {
+            "objectId": 9,
+            "title": "",
+            "description": "",
+            "actions": [
+                {
+                    "type": "IFRAME",
+                    "uri": "https://hubspot-thomas.test.reguest.io/Api/IntegrationApi/HubSpot/ChargeBeeSubscriptionDetails?chargeBeeCustomerId=DEV-TOM-43&t=577ffad9-a835-46b2-86d1-a51759dd0811&subscriptionId=BTUNXDU9Mqe4s4dB",
+                    "label": "Show Subscription Details",
+                    "associatedObjectProperties": []
+                }
+            ],
+            "properties": [
+                {
+                    "label": "Subscription Id",
+                    "dataType": "LINK",
+                    "value": "https://reguest-test.chargebee.com/d/subscriptions/BTUNXDU9Mqe4s4dB",
+                    "linkLabel": "BTUNXDU9Mqe4s4dB"
+                },
+                {
+                    "label": "Status",
+                    "dataType": "STATUS",
+                    "value": "Active",
+                    "optionType": "SUCCESS"
+                },
+                {
+                    "label": "Product Family",
+                    "dataType": "STRING",
+                    "value": "Multi Property"
+                },
+                {
+                    "label": "Plan",
+                    "dataType": "STRING",
+                    "value": "Enterprise Plan Offers "
+                },
+                {
+                    "label": "Addon",
+                    "dataType": "STRING",
+                    "value": "Enterprise Guest Communication Module , \r\nEnterprise Offers Module , \r\nEnterprise Upseller Module , \r\nEnterprise Sales Campaigns Module "
+                },
+                {
+                    "label": "Plan Quantity",
+                    "dataType": "STRING",
+                    "value": "5"
+                },
+                {
+                    "label": "ARR",
+                    "dataType": "STRING",
+                    "value": "17,050.00 EUR"
+                },
+                {
+                    "label": "Billing every",
+                    "dataType": "STRING",
+                    "value": "Year"
+                },
+                {
+                    "label": "Next Billing Date",
+                    "dataType": "STRING",
+                    "value": "08.06.2026"
+                }
+            ]
+        },
+        {
+            "objectId": 10,
+            "title": "",
+            "description": "",
+            "actions": [
+                {
+                    "type": "IFRAME",
+                    "uri": "https://hubspot-thomas.test.reguest.io/Api/IntegrationApi/HubSpot/ChargeBeeSubscriptionDetails?chargeBeeCustomerId=DEV-TOM-43&t=577ffad9-a835-46b2-86d1-a51759dd0811&subscriptionId=BTUNViU8xak9WAK",
+                    "label": "Show Subscription Details",
+                    "associatedObjectProperties": []
+                }
+            ],
+            "properties": [
+                {
+                    "label": "Subscription Id",
+                    "dataType": "LINK",
+                    "value": "https://reguest-test.chargebee.com/d/subscriptions/BTUNViU8xak9WAK",
+                    "linkLabel": "BTUNViU8xak9WAK"
+                },
+                {
+                    "label": "Status",
+                    "dataType": "STATUS",
+                    "value": "Active",
+                    "optionType": "SUCCESS"
+                },
+                {
+                    "label": "Product Family",
+                    "dataType": "STRING",
+                    "value": "Re:Guest"
+                },
+                {
+                    "label": "Plan",
+                    "dataType": "STRING",
+                    "value": "Sales Hub "
+                },
+                {
+                    "label": "Addon",
+                    "dataType": "STRING",
+                    "value": "Guest Communication Module , \r\nOffers Module "
+                },
+                {
+                    "label": "Plan Quantity",
+                    "dataType": "STRING",
+                    "value": "1"
+                },
+                {
+                    "label": "ARR",
+                    "dataType": "STRING",
+                    "value": "60.00 EUR"
+                },
+                {
+                    "label": "Billing every",
+                    "dataType": "STRING",
+                    "value": "Year"
+                },
+                {
+                    "label": "Next Billing Date",
+                    "dataType": "STRING",
+                    "value": "04.06.2026"
+                }
+            ]
+        }
+    ],
+    "primaryAction": {
+        "type": "IFRAME",
+        "uri": "https://hubspot-thomas.test.reguest.io/Api/IntegrationApi/HubSpot/SubscriptionCreate?chargeBeeCustomerId=DEV-TOM-43&t=577ffad9-a835-46b2-86d1-a51759dd0811",
+        "label": "Create a Subscription in ChargeBee",
+        "associatedObjectProperties": []
+    }
+}

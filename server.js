@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const rgPortal = require("./rg-portal.json");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -47,4 +48,9 @@ app.post("/hubspot/settings", (req, res) => {
 
 app.listen(port, () => {
   console.log(`Settings backend running on port ${port}`);
+});
+
+app.get("/hubspot/rg-portal", (req, res) => {
+  console.log("GET /hubspot/rg-portal");
+  res.json(rgPortal);
 });
