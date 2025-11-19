@@ -2,18 +2,20 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
 app.use(express.json({ type: "*/*" }));
 
-// Fake-Speicher im RAM (nur für Test!)
+// Fake-Speicher im RAM
 const settingsStore = new Map(); // key: portalId, value: { sensorUrl }
 
 // GET /hubspot/settings?portalId=123
 app.get("/hubspot/settings", (req, res) => {
   const portalId = req.query.portalId;
+
+  console.log("GET /hubspot/settings, portalId =", portalId);
 
   if (!portalId) {
     return res.status(400).json({ error: "portalId is required" });
@@ -25,7 +27,7 @@ app.get("/hubspot/settings", (req, res) => {
 
 // POST /hubspot/settings  { portalId, sensorUrl }
 app.post("/hubspot/settings", (req, res) => {
-  console.log("Incoming /hubspot/settings body:", req.body);
+  console.log("POST /hubspot/settings body:", req.body);
 
   const { portalId, sensorUrl } = req.body || {};
 
@@ -42,5 +44,5 @@ app.post("/hubspot/settings", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Settings backend running on http://localhost:${port}`);
+  console.log(`Settings backend running on port ${port}`);
 });
