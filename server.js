@@ -13,7 +13,8 @@ const settingsStore = new Map(); // key: portalId, value: { sensorUrl }
 
 // GET /hubspot/settings?portalId=123
 app.get("/hubspot/settings", (req, res) => {
-  const portalId = req.query.portalId;
+  const portalIdRaw = req.query.portalId;
+  const portalId = String(portalIdRaw); // 🔑 immer als String
 
   console.log("GET /hubspot/settings, portalId =", portalId);
 
@@ -30,6 +31,7 @@ app.post("/hubspot/settings", (req, res) => {
   console.log("POST /hubspot/settings body:", req.body);
 
   const { portalId, sensorUrl } = req.body || {};
+  const portalIdKey = String(portalId); // 🔑 hier auch String
 
   if (!portalId || !sensorUrl) {
     return res
@@ -37,8 +39,8 @@ app.post("/hubspot/settings", (req, res) => {
       .json({ error: "portalId and sensorUrl are required" });
   }
 
-  settingsStore.set(portalId, { sensorUrl });
-  console.log("Saved settings for portal", portalId, "=>", sensorUrl);
+  settingsStore.set(portalIdKey, { sensorUrl });
+  console.log("Saved settings for portal", portalIdKey, "=>", sensorUrl);
 
   return res.json({ success: true });
 });
